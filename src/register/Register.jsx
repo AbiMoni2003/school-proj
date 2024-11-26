@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import './Style.css';
 function Register() {
     const [step,setStep]=useState(1);
@@ -8,9 +8,10 @@ function Register() {
     const [x,setX]=useState("none");
     const [otp,setOtp]=useState("");
     const [password,setPassword]=useState("");
-   
-    
     const [conpassword,setConpassword]=useState("");
+    const [msg,setMsg]=useState("");
+    const [y,setY]=useState("none");
+    const [z,setZ]=useState("inline-block");
    
     
 
@@ -25,6 +26,7 @@ function Register() {
         setGenerateotp(generateotp);
         alert("OTP send to your mobile number..")   
         setX("inline-block");
+        setZ("none");
     }
     else{
         alert("Not a valid  Mobile Number")
@@ -34,24 +36,41 @@ function Register() {
     if(generateotp==otp){
         alert("verified successfully");
         setX("none")
+        setY("inline-block")
     }
     else{
         alert("OTP is not valid");
     }
    }
+   const checkpassword = () => {
+    if (password.length < 8) {
+        setMsg("Password is too short");
+    } else if (password !== conpassword) {
+        setMsg("Password Mismatch");
+    } else {
+        setMsg(""); 
+    }
+};
+
   return (
     <Fragment>
        <div className='top-div'>
         <h1>Register</h1>
+        <div style={{display:z}}>
         <input type="text" name="username" className="name" placeholder='Username' value={usrname} onChange={(e)=>setUsrname(e.target.value)}/><br/>
         <input type="text" name="phonenumber" className="number" placeholder='Phone Number' maxLength={10} value={number} onChange={(e)=>setNumber(e.target.value)}/><br/>
         <button onClick={handleotp}>Get OTP</button><br/>
+        </div>
         <div style={{display:x}}>
         <input  type="text" value={otp} onChange={(e)=>setOtp(e.target.value)} maxLength={4}/>
-        <button onClick={verifyotp}>Verify OTP</button><br/>
+        <button onClick={verifyotp}>Verify OTP</button>
         </div>
+        <div style={{display:y}}>
         <input type="password" className="password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder='Password'/><br/>
-        <input type="password" className='cnfmpassword' value={conpassword} onChange={(e)=>setConpassword(e.target.value)} placeholder='Confrm Password'/>
+        <input type="password" className='cnfmpassword' value={conpassword} onChange={(e)=>setConpassword(e.target.value)} placeholder='Confrm Password'/><br/>
+        <p>{msg}</p>
+        <button onClick={checkpassword}>Register</button>
+        </div>
        </div>
        
     </Fragment>
