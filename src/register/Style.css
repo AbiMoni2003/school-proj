@@ -63,6 +63,7 @@ p{
     .top-div{
         width: auto;
         margin: auto;
+        max-width: 300px;
     }
 }
 @media screen and(max-width:750px) {
