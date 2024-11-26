@@ -7,6 +7,10 @@ function Register() {
     const [generateotp,setGenerateotp]=useState("");
     const [x,setX]=useState("none");
     const [otp,setOtp]=useState("");
+    const [password,setPassword]=useState("");
+   
+    
+    const [conpassword,setConpassword]=useState("");
    
     
 
@@ -29,6 +33,7 @@ function Register() {
    const verifyotp=()=>{
     if(generateotp==otp){
         alert("verified successfully");
+        setX("none")
     }
     else{
         alert("OTP is not valid");
@@ -43,9 +48,10 @@ function Register() {
         <button onClick={handleotp}>Get OTP</button><br/>
         <div style={{display:x}}>
         <input  type="text" value={otp} onChange={(e)=>setOtp(e.target.value)} maxLength={4}/>
-        <button onClick={verifyotp}>Verify OTP</button>
+        <button onClick={verifyotp}>Verify OTP</button><br/>
         </div>
-         
+        <input type="password" className="password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder='Password'/><br/>
+        <input type="password" className='cnfmpassword' value={conpassword} onChange={(e)=>setConpassword(e.target.value)} placeholder='Confrm Password'/>
        </div>
        
     </Fragment>
