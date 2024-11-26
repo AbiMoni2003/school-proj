@@ -12,6 +12,7 @@ function Register() {
     const [msg,setMsg]=useState("");
     const [y,setY]=useState("none");
     const [z,setZ]=useState("inline-block");
+    
    
     
 
@@ -44,12 +45,14 @@ function Register() {
    }
    const checkpassword = () => {
     if (password.length < 8) {
+       
         setMsg("Password is too short");
     } else if (password !== conpassword) {
         setMsg("Password Mismatch");
     } else {
         setMsg(""); 
     }
+    
 };
 
   return (
