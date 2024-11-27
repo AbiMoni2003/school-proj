@@ -1,83 +1,137 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { useState } from 'react';
 import './Style.css';
+
 function Register() {
-    const [step,setStep]=useState(1);
-    const [usrname,setUsrname]=useState("");
-    const [number,setNumber]=useState("");
-    const [generateotp,setGenerateotp]=useState("");
-    const [x,setX]=useState("none");
-    const [otp,setOtp]=useState("");
-    const [password,setPassword]=useState("");
-    const [conpassword,setConpassword]=useState("");
-    const [msg,setMsg]=useState("");
-    const [y,setY]=useState("none");
-    const [z,setZ]=useState("inline-block");
-    
-   
+    const [usrname, setUsrname] = useState("");
+    const [number, setNumber] = useState("");
+    const [generateotp, setGenerateotp] = useState("");
+    const [otp, setOtp] = useState("");
+    const [password, setPassword] = useState("");
+    const [conpassword, setConpassword] = useState("");
+    const [msg, setMsg] = useState("");
+
+    const getotp = () => {
+        if (!usrname.trim()) {
+            alert("Username cannot be empty");
+            return;
+        }
+        if (number.length === 10) {
+            const otp = Math.floor(1000 + Math.random() * 9000).toString();
+            console.log("Generated OTP:", otp);
+            setGenerateotp(otp);
+            alert("OTP sent to your mobile number.");
+        } else {
+            alert("Not a valid mobile number");
+        }
+    };
+    const verifyotp=()=>{
+        if(otp == generateotp){
+            alert("OTP verified Successfully");
+        }
+        else{
+            alert("Invalid OTP");
+        }
+        
+    }
     
 
-   const handleotp=()=>{
-    if (!usrname.trim()) {
-        alert("Username cannot be empty");
-        return;
-    }
-    if(number.length==10){
-        const generateotp=Math.floor(1000 + Math.random() * 9000).toString();
-        console.log(generateotp); 
-        setGenerateotp(generateotp);
-        alert("OTP send to your mobile number..")   
-        setX("inline-block");
-        setZ("none");
-    }
-    else{
-        alert("Not a valid  Mobile Number")
-    }   
-   };
-   const verifyotp=()=>{
-    if(generateotp==otp){
-        alert("verified successfully");
-        setX("none")
-        setY("inline-block")
-    }
-    else{
-        alert("OTP is not valid");
-    }
-   }
-   const checkpassword = () => {
-    if (password.length < 8) {
-       
-        setMsg("Password is too short");
-    } else if (password !== conpassword) {
-        setMsg("Password Mismatch");
-    } else {
-        setMsg(""); 
-    }
-    
-};
+    const validateAllFields = () => {
+        if (!usrname.trim()) {
+            alert("Username cannot be empty");
+            return false;
+        }
+        if (number.length !== 10) {
+            alert("Please enter a valid 10-digit phone number");
+            return false;
+        }
+        if (generateotp === "") {
+            alert("Please generate an OTP");
+            return false;
+        }
+        if (otp !== generateotp) {
+            alert("Invalid OTP. Please verify.");
+            return false;
+        }
+        if (password.length < 8) {
+            alert("Password must be at least 8 characters long");
+            return false;
+        }
+        if (password !== conpassword) {
+            alert("Password mismatch");
+            return false;
+        }
+        return true;
+    };
 
-  return (
-    <Fragment>
-       <div className='top-div'>
-        <h1>Register</h1>
-        <div style={{display:z}}>
-        <input type="text" name="username" className="name" placeholder='Username' value={usrname} onChange={(e)=>setUsrname(e.target.value)}/><br/>
-        <input type="text" name="phonenumber" className="number" placeholder='Phone Number' maxLength={10} value={number} onChange={(e)=>setNumber(e.target.value)}/><br/>
-        <button onClick={handleotp}>Get OTP</button><br/>
+    const handleRegister = () => {
+        if (validateAllFields()) {
+            alert("Registration Successful");
+            setUsrname("");
+            setNumber("");
+            setGenerateotp("");
+            setOtp("");
+            setPassword("");
+            setConpassword("");
+            setMsg("");
+        }
+    };
+
+    return (
+        <div className="top-div">
+            <h1>Register</h1>
+            <div className="input-container">
+                <input
+                    type="text"
+                    name="username"
+                    className="name"
+                    placeholder="Username"
+                    value={usrname}
+                    onChange={(e) => setUsrname(e.target.value)}
+                />
+                <input
+                    type="text"
+                    name="phonenumber"
+                    className="number"
+                    placeholder="Phone Number"
+                    maxLength={10}
+                    value={number}
+                    onChange={(e) => setNumber(e.target.value)}
+                />
+                <button onClick={getotp} className="btn">Get OTP</button>
+            </div>
+
+            <div className="otp-container">
+                <input
+                    type="text"
+                    value={otp}
+                    onChange={(e) => setOtp(e.target.value)}
+                    maxLength={4}
+                    placeholder="Enter OTP"
+                    className="otp-input"
+                />
+                <button onClick={verifyotp} className="btn small-btn">Verify OTP</button>
+            </div>
+
+            <div className="password-container">
+                <input
+                    type="password"
+                    className="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Password"
+                />
+                <input
+                    type="password"
+                    className="cnfmpassword"
+                    value={conpassword}
+                    onChange={(e) => setConpassword(e.target.value)}
+                    placeholder="Confirm Password"
+                />
+                <p className="error-msg">{msg}</p>
+                <button onClick={handleRegister} className="btn">Register</button>
+            </div>
         </div>
-        <div style={{display:x}}>
-        <input  type="text" value={otp} onChange={(e)=>setOtp(e.target.value)} maxLength={4}/>
-        <button onClick={verifyotp}>Verify OTP</button>
-        </div>
-        <div style={{display:y}}>
-        <input type="password" className="password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder='Password'/><br/>
-        <input type="password" className='cnfmpassword' value={conpassword} onChange={(e)=>setConpassword(e.target.value)} placeholder='Confrm Password'/><br/>
-        <p>{msg}</p>
-        <button onClick={checkpassword}>Register</button>
-        </div>
-       </div>
-       
-    </Fragment>
-  )
+    );
 }
 
-export default Register
+export default Register;
