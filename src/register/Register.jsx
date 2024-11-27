@@ -83,8 +83,9 @@ function Register() {
     return (
         <Fragment>
        <header>
-        <h1>School Mangement</h1>
-       </header>
+    <img src={logo} alt="School Logo" className="header-logo" />
+    <h1>School Management</h1>
+    </header>
         <div className="top-div">
             <h1>Register</h1>
             <div className="input-container">
@@ -136,7 +137,7 @@ function Register() {
                     placeholder="Confirm Password"
                 />
                 <p className="error-msg">{msg}</p>
-                <button onClick={handleRegister} className="btn">Register</button>
+                <button onClick={handleRegister} className="btn register-btn">Register</button>
             </div>
         </div>
         </Fragment>

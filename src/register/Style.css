@@ -1,30 +1,33 @@
-/* General styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #eef2f7; /* Subtle background for better contrast */
+    background-color: #eef2f7;
 }
 
 header {
-    padding: 10px;
-    background-color: rgb(58, 134, 255);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; 
+    background-color: #53f559; 
+    padding: 10px 20px;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin: 0;
     text-align: center;
+    flex-grow: 1;
 }
 
-
-header img {
-    height: 70px;
-    width: 50px;
+.header-logo {
+    height: 50px;
+    width: auto;
+    margin-right: 15px; 
 }
 
 .top-div {
@@ -60,6 +63,10 @@ input {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+input:hover {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
 input:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
@@ -75,6 +82,7 @@ input:focus {
     width: 26%;
     display: inline-block;
     margin-left: 2%;
+    font-size: 13px;
 }
 
 button {
@@ -120,7 +128,7 @@ button.register-btn:hover {
     font-size: 14px;
 }
 
-
+/* Responsive Design */
 @media (max-width: 750px) {
     .otp-container input {
         width: 65%;
