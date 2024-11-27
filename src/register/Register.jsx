@@ -93,7 +93,7 @@ function Register() {
                     type="text"
                     name="username"
                     className="name"
-                    placeholder="Username"
+                    placeholder= "Username"
                     value={usrname}
                     onChange={(e) => setUsrname(e.target.value)}
                 />
@@ -139,6 +139,7 @@ function Register() {
                 <p className="error-msg">{msg}</p>
                 <button onClick={handleRegister} className="btn register-btn">Register</button>
             </div>
+            <p>Have already an account?<a><u> Login here</u></a></p>
         </div>
         </Fragment>
     );

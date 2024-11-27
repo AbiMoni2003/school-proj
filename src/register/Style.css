@@ -11,13 +11,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center; 
-    background-color: #F8F6F1; 
-    padding: 10px 20px;
+    background-color: #67e13a; 
+    padding: 10px ;
     box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
+    
 }
 
 header h1 {
-    color: rgb(79, 77, 77);
+    color: rgb(53, 52, 52);
     font-size: 1.8rem;
     margin: 0;
     text-align: center;
@@ -25,9 +26,7 @@ header h1 {
 }
 
 .header-logo {
-    height: 50px;
-    width: auto;
-    margin-right: 15px; 
+    height: 50px;  
 }
 
 .top-div {
@@ -94,6 +93,13 @@ button {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+.top-div p{
+    margin-left: 10px;
+}
+p u{
+    color: rgb(52, 50, 50);
+   
+}
 
 
 button.btn {
@@ -103,24 +109,6 @@ button.btn {
 
 button.btn:hover {
     background-color: #3c8be0;
-}
-
-button.small-btn {
-    background-color: #3fc55f; 
-    color: white;
-}
-
-button.small-btn:hover {
-    background-color: #30a148;
-}
-
-button.register-btn {
-    background-color: #ff7f50; 
-    color: white;
-}
-
-button.register-btn:hover {
-    background-color: #e56740;
 }
 
 .password-container p {
