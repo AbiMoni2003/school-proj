@@ -17,22 +17,25 @@ function Register() {
         }
         if (number.length === 10) {
             const otp = Math.floor(1000 + Math.random() * 9000).toString();
-            console.log("Generated OTP:", otp);
+            console.log(otp);
             setGenerateotp(otp);
             alert("OTP sent to your mobile number.");
         } else {
             alert("Not a valid mobile number");
         }
     };
-    const verifyotp=()=>{
-        if(otp == generateotp){
-            alert("OTP verified Successfully");
+    const verifyotp = () => {
+        if (!otp) {
+            alert("Please enter the OTP");
+            return;
         }
-        else{
+        if (otp !== generateotp) {
             alert("Invalid OTP");
+        } else {
+            alert("OTP verified successfully");
         }
-        
-    }
+    };
+    
     
 
     const validateAllFields = () => {
