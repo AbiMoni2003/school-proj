@@ -11,13 +11,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center; 
-    background-color: #53f559; 
+    background-color: #F8F6F1; 
     padding: 10px 20px;
     box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    color: white;
+    color: rgb(79, 77, 77);
     font-size: 1.8rem;
     margin: 0;
     text-align: center;
@@ -57,7 +57,7 @@ input {
     padding: 10px;
     margin: 10px 0;
     border: none;
-    background-color: #fff8f8f4;
+    background-color: #fbf4f4f4;
     border-radius: 10px;
     font-size: 16px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
