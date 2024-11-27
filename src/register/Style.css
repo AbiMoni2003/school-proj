@@ -68,7 +68,7 @@ input:hover {
 }
 
 input:focus {
-    border-color: #007bff;
+    border-color: #479af2;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     outline: none;
 }
@@ -95,27 +95,27 @@ button {
     transition: all 0.3s ease;
 }
 
-/* Button Color Variations */
+
 button.btn {
-    background-color: #007bff; /* Primary color for "Get OTP" */
+    background-color: #449cf9; 
     color: white;
 }
 
 button.btn:hover {
-    background-color: #0056b3;
+    background-color: #3c8be0;
 }
 
 button.small-btn {
-    background-color: #28a745; /* Green for "Verify OTP" */
+    background-color: #3fc55f; 
     color: white;
 }
 
 button.small-btn:hover {
-    background-color: #218838;
+    background-color: #30a148;
 }
 
 button.register-btn {
-    background-color: #ff7f50; /* Coral for "Register" */
+    background-color: #ff7f50; 
     color: white;
 }
 
@@ -128,7 +128,7 @@ button.register-btn:hover {
     font-size: 14px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 750px) {
     .otp-container input {
         width: 65%;
@@ -156,5 +156,8 @@ button.register-btn:hover {
 
     .otp-container .btn {
         width: 30%;
+    }
+    header h1{
+        font-size:20px ;
     }
 }
