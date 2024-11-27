@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import './Style.css';
+import logo from '../assets/CFlogo.png'
 
 function Register() {
     const [usrname, setUsrname] = useState("");
@@ -80,6 +81,10 @@ function Register() {
     };
 
     return (
+        <Fragment>
+       <header>
+        <h1>School Mangement</h1>
+       </header>
         <div className="top-div">
             <h1>Register</h1>
             <div className="input-container">
@@ -134,6 +139,7 @@ function Register() {
                 <button onClick={handleRegister} className="btn">Register</button>
             </div>
         </div>
+        </Fragment>
     );
 }
 
