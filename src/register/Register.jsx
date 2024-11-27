@@ -93,7 +93,7 @@ function Register() {
                     type="text"
                     name="username"
                     className="name"
-                    placeholder= "Username"
+                    placeholder= "👤 Username"
                     value={usrname}
                     onChange={(e) => setUsrname(e.target.value)}
                 />
@@ -101,7 +101,7 @@ function Register() {
                     type="text"
                     name="phonenumber"
                     className="number"
-                    placeholder="Phone Number"
+                    placeholder="📞 Phone Number"
                     maxLength={10}
                     value={number}
                     onChange={(e) => setNumber(e.target.value)}
@@ -115,7 +115,7 @@ function Register() {
                     value={otp}
                     onChange={(e) => setOtp(e.target.value)}
                     maxLength={4}
-                    placeholder="Enter OTP"
+                    placeholder=" 🔗 Enter OTP"
                     className="otp-input"
                 />
                 <button onClick={verifyotp} className="btn small-btn">Verify OTP</button>
@@ -127,14 +127,14 @@ function Register() {
                     className="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Password"
+                    placeholder=" 🔐 Password"
                 />
                 <input
                     type="password"
                     className="cnfmpassword"
                     value={conpassword}
                     onChange={(e) => setConpassword(e.target.value)}
-                    placeholder="Confirm Password"
+                    placeholder=" 🗝️ Confirm Password"
                 />
                 <p className="error-msg">{msg}</p>
                 <button onClick={handleRegister} className="btn register-btn">Register</button>
