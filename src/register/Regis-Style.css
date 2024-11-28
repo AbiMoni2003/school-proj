@@ -11,7 +11,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center; 
-   background-color: #f2f0f0;
+   background-color: #f9f5f5;
     padding: 10px ;
     box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
     
@@ -78,9 +78,10 @@ input:focus {
 }
 
 .otp-container .btn {
+    padding-top: 11px;
     width: 26%;
     display: inline-block;
-    margin-left: 2%;
+    margin-left: 3%;
     font-size: 13px;
 }
 
@@ -96,6 +97,7 @@ button {
 .top-div p{
     margin-left: 10px;
 }
+
 
 button.btn {
     background-color: #449cf9; 
