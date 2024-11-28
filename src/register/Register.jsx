@@ -140,7 +140,7 @@ function Register() {
                 <p className="error-msg">{msg}</p>
                 <button onClick={handleRegister} className="btn register-btn">Register</button>
             </div>
-            <p>Have already an account?<a><u><Link to="/login"> Login here</Link></u></a></p>
+            <p>Have already an account?<Link to="/login"> Login here</Link></p>
         </div>
         </Fragment>
     );

@@ -8,15 +8,16 @@ function Login() {
   const [password,setPassword]=useState("");
 
   const loginvalidate=()=>{
-    if(username==""){
-      alert("Username is Empty");
-    }
-    else if(password==""){
-      alert("Password is Empty")
-    }
-    else{
-      
-    }
+   if(!username){
+    alert("Username is empty");
+    return;
+   }
+   if(!password){
+    alert("Password is empty");
+   }
+   else{
+    alert("Login Successfully");
+   }
   }
   return (
     <Fragment>
@@ -28,9 +29,9 @@ function Login() {
         <h1>Login</h1>
         <input type="text"  placeholder='👤 username'  value={username} onChange={(e)=>setUsername(e.target.value)}/>
         <input type="password" placeholder='🔐 password' value={password} onChange={(e)=>setPassword(e.target.value)} />
-        <p className='login-forgot'><a><u><Link to="/forgot">forgot password?</Link></u></a></p>
+        <p className='login-forgot'><Link to="/forgot">forgot password?</Link></p>
         <button className='login-btn' onClick={loginvalidate}>Login</button>
-        <p className='login-dont'>Don't have an account?<a><u><Link to="/register"> Sign up</Link> </u></a></p>
+        <p className='login-dont'>Don't have an account?<Link to="/register"> Sign up</Link></p>
        </div>
     </Fragment>
   )
