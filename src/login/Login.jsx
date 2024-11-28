@@ -27,9 +27,9 @@ function Login() {
        </header>
        <div className='login-top-div'>
         <h1>Login</h1>
-        <input type="text"  placeholder='👤 username'  value={username} onChange={(e)=>setUsername(e.target.value)}/>
-        <input type="password" placeholder='🔐 password' value={password} onChange={(e)=>setPassword(e.target.value)} />
-        <p className='login-forgot'><Link to="/forgot">forgot password?</Link></p>
+        <input type="text"  placeholder='👤 Username'  value={username} onChange={(e)=>setUsername(e.target.value)}/>
+        <input type="password" placeholder='🔐 Password' value={password} onChange={(e)=>setPassword(e.target.value)} />
+        <p className='login-forgot'><Link to="/forgot">Forgot Password?</Link></p>
         <button className='login-btn' onClick={loginvalidate}>Login</button>
         <p className='login-dont'>Don't have an account?<Link to="/register"> Sign up</Link></p>
        </div>
