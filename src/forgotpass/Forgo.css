@@ -1,0 +1,19 @@
+.forgot-top-div{
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+.forgot-otp{
+    margin-top:5px;
+}
+.newpass{
+    margin-top: 0px;
+}
+.forgot-top-div p{
+    text-align: center;
+    cursor: pointer;
+}

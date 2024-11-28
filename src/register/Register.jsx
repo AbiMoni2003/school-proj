@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import './Regis-Style.css';
 import logo from '../assets/CFlogo.png'
+import {Link} from 'react-router-dom';
 
 function Register() {
     const [usrname, setUsrname] = useState("");
@@ -139,7 +140,7 @@ function Register() {
                 <p className="error-msg">{msg}</p>
                 <button onClick={handleRegister} className="btn register-btn">Register</button>
             </div>
-            <p>Have already an account?<a><u> Login here</u></a></p>
+            <p>Have already an account?<a><u><Link to="/login"> Login here</Link></u></a></p>
         </div>
         </Fragment>
     );
