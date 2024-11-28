@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import './Style.css';
+import './Regis-Style.css';
 import logo from '../assets/CFlogo.png'
 
 function Register() {

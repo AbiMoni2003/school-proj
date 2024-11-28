@@ -11,7 +11,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center; 
-    background-color: #2873f0;
+   background-color: #f2f0f0;
     padding: 10px ;
     box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
     
@@ -98,6 +98,7 @@ button {
 }
 p u{
     color: rgb(52, 50, 50);
+    cursor: pointer;
    
 }
 
