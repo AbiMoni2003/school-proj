@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import logo from '../assets/CFlogo.png'
-import '../forgotpass/Forgo.css';
+import '../assets/Style.css';
 import {Link} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
