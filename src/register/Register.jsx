@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import './Regis-Style.css';
+import '../assets/Style.css';
 import logo from '../assets/CFlogo.png'
 import {Link} from 'react-router-dom';
 

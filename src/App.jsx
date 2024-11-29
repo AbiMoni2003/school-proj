@@ -3,12 +3,13 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Forgot from './forgotpass/Forgot'
 import Login from './login/Login'
 import Register from './register/Register'
+import Home from './home/Home';
 
 function App() {
 
   return (
     <>
-      <BrowserRouter>
+       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Register/>}/>
         <Route path='/login' element={<Login/>}/>
@@ -16,6 +17,7 @@ function App() {
         <Route path='/forgot' element={<Forgot/>}/>
       </Routes>
       </BrowserRouter>
+      <Home/> 
     </>
   )
 }
