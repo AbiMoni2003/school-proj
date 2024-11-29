@@ -11,10 +11,11 @@ function Register() {
     const [password, setPassword] = useState("");
     const [conpassword, setConpassword] = useState("");
     const [msg, setMsg] = useState("");
+    
 
     const getotp = () => {
         if (!usrname.trim()) {
-            alert("Username cannot be empty");
+           alert("Username cannot be empty");
             return;
         }
         if (number.length === 10) {

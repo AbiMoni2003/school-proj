@@ -70,6 +70,7 @@ input:focus {
     border-color: #479af2;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     outline: none;
+    background: transparent;
 }
 
 .otp-container input {
