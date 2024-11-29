@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:"Poppins",sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #eef2f7;
 }
 
-header {
+.head-rlf {
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -17,7 +18,7 @@ header {
     
 }
 
-header h1 {
+.head-rlf h1 {
     color: rgb(53, 52, 52);
     font-size: 1.8rem;
     margin: 0;
@@ -209,4 +210,101 @@ margin-left: 8px;
     max-width: 300px;
     margin-top: 70px;
 }
+}
+
+
+/* General Styles */
+.whole-div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.home-header {
+    background-color: #f9f9f9; /* Optional background color for the header */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Styling */
+nav {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+/* Logo */
+.header-logo {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Center Links */
+ul li:nth-child(2), /* Home */
+ul li:nth-child(3), /* About */
+ul li:nth-child(4)  /* Contact */ {
+    flex: 1;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+}
+
+ul li:nth-child(2):hover,
+ul li:nth-child(3):hover,
+ul li:nth-child(4):hover {
+    color: #449cf9; /* Hover effect */
+}
+
+/* Buttons (SignUp & Login) */
+.home-btn {
+    background-color: #449cf9;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home-btn:hover {
+    background-color: #337acc;
+}
+
+/* Align Buttons on Right */
+.link2 {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    ul li:nth-child(2),
+    ul li:nth-child(3),
+    ul li:nth-child(4) {
+        text-align: left;
+        flex: unset;
+    }
+
+    .home-btn {
+        width: 100%;
+        text-align: center;
+    }
 }

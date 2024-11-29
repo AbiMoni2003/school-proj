@@ -21,7 +21,7 @@ function Login() {
   }
   return (
     <Fragment>
-       <header>
+       <header className='head-rlf'>
         <img src={logo} alt='logo' className='header-logo'/>
         <h1>School Management</h1>
        </header>
