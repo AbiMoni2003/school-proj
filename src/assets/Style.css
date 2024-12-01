@@ -212,99 +212,78 @@ margin-left: 8px;
 }
 }
 
-
-/* General Styles */
-.whole-div {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-.home-header {
-    background-color: #f9f9f9; /* Optional background color for the header */
-    padding: 10px 20px;
+.whole-div nav{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Navigation Styling */
-nav {
-    width: 100%;
-}
-
-ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    gap: 10px;
-}
-
-/* Logo */
-.header-logo {
-    max-width: 100px; /* Adjust size as needed */
-    height: auto;
-}
-
-/* Center Links */
-ul li:nth-child(2), /* Home */
-ul li:nth-child(3), /* About */
-ul li:nth-child(4)  /* Contact */ {
-    flex: 1;
+    background-color: #f5ecec;
+    padding: 10px;
     text-align: center;
-    font-size: 1rem;
-    color: #333;
-    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+   
+    
+}
+.whole-div nav>ul{
+    display: flex;
+}
+.whole-div nav>ul>li{
+    list-style: none;
+    margin: 0px 20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 17px;
+  text-transform: uppercase;
 }
 
-ul li:nth-child(2):hover,
-ul li:nth-child(3):hover,
-ul li:nth-child(4):hover {
-    color: #449cf9; /* Hover effect */
+.whole-div nav>ul>li:hover{
+    text-decoration: underline;
+   text-underline-offset: 10px;
+   text-decoration-thickness: 3px;
+   transform: scale(1.07);
 }
-
-/* Buttons (SignUp & Login) */
-.home-btn {
-    background-color: #449cf9;
+.whole-div button{
+   padding:10px;
+    background-color: #479af2;
+    height: fit-content;
+    width: fit-content;
+    margin: 10px;
     color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
+    transition: background-color 1s ease-in-out,transform 2s;
 }
 
-.home-btn:hover {
-    background-color: #337acc;
+.whole-div button:hover{
+    background-color: #0e7cea;
+    transform: scale(1.06);
 }
 
-/* Align Buttons on Right */
-.link2 {
-    text-decoration: none;
-    margin-left: 10px;
+.whole-div .check-box{
+    font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+    display: none;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    ul {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    ul li:nth-child(2),
-    ul li:nth-child(3),
-    ul li:nth-child(4) {
-        text-align: left;
-        flex: unset;
-    }
-
-    .home-btn {
+@media screen and (max-width: 480px) {
+    .whole-div nav {
+        padding: 5px;
+        height: 50px;
         width: 100%;
-        text-align: center;
+       
+    }
+
+    .whole-div nav > ul > li {
+        font-size: 14px;
+    }
+
+    .whole-div button {
+        padding: 8px;
+        font-size: 13px;
+    }
+    .whole-div .check-box{
+        display: block;
+    }
+    .whole-div nav>ul>li{
+        display: block;
     }
 }
