@@ -278,10 +278,10 @@ margin-left: 8px;
   display: none;
 }
 #check{
-    display: none;
+   display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 700px) {
     
     .whole-div{
         position: relative;
@@ -295,17 +295,21 @@ margin-left: 8px;
         .whole-div nav>ul{
            display: block;
            text-align: center;
+           transition: all 0.5s;
+          
         }
         .whole-div nav>ul>li{
             margin: 10px;
         }
-     .home-btn-div{
-        position: relative;
-    }
+        .whole-div .home-btn-div{
+            align-items: center;
+            text-align: center;
+            margin-left: 40px;
+        }
+    
     .whole-div button {
         padding: 8px;
-        font-size: 13px; 
-       
+        font-size: 13px;  
     }
     .whole-div .check-box{
         display: block;
@@ -314,4 +318,10 @@ margin-left: 8px;
         right: 10px;
         position: absolute;
     }
+   .whole-div{
+    background-color: #186cd3;
+   }
+   #check:checked ~ li{
+    background-color: #78caa5; /* Light green background */
+}
 }
