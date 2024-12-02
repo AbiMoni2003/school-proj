@@ -16,9 +16,6 @@ function Home() {
               <li className="nav-item">Contact</li>
             </ul>
             <div className='home-btn-div'>
-              <Link to="/register">
-                <button className="home-btn">Sign Up</button>
-              </Link>
               <Link to="/login">
                 <button className="home-btn">Login</button>
               </Link>
@@ -30,6 +27,7 @@ function Home() {
           </nav>
         </header>
         </div>
+        
     </Fragment>
   )
 }

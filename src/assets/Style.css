@@ -29,6 +29,13 @@ body {
 .header-logo {
     height: 50px;  
 }
+.home-logo{
+    height: 35px;
+    background-color: #dee8f5;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
 .top-div {
     max-width: 400px;
@@ -134,7 +141,7 @@ button.btn:hover {
 
 @media (max-width: 480px) {
     .top-div {
-        width: 300px;
+        width: 320px;
     }
 
     .otp-container input {
@@ -156,6 +163,7 @@ button.btn:hover {
     .head-rlf h1{
         font-size: 18px;
     }
+   
 }
 
 
@@ -181,7 +189,7 @@ button.btn:hover {
 }
 @media (max-width:450px){
     .forgot-top-div{
-        max-width: 300px;
+        max-width: 320px;
         margin-top: 70px;
     }
     .forgot-top-div p{
@@ -223,7 +231,7 @@ margin-left: 8px;
 
 @media (max-width:450px){
 .login-top-div{
-    max-width: 300px;
+    max-width: 320px;
     margin-top: 70px;
 }
 .login-top-div p{
@@ -257,6 +265,8 @@ margin-left: 8px;
    text-decoration-thickness: 3px;
    transform: scale(1.07);
 }
+
+
 .whole-div button{
    padding:10px;
     background-color: #479af2;
@@ -282,7 +292,9 @@ margin-left: 8px;
 }
 
 @media (max-width: 700px) {
-    
+    .home-logo{
+        height: 23px;
+    }
     .whole-div{
         position: relative;
     }
@@ -321,7 +333,7 @@ margin-left: 8px;
    .whole-div{
     background-color: #186cd3;
    }
-   #check:checked ~ li{
-    background-color: #78caa5; /* Light green background */
+#check:checked  ~ .nav-items{
+    background-color: #0e7cea;
 }
 }

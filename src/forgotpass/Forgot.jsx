@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import logo from '../assets/CFlogo.png'
+import holo from '../assets/home.svg';
 import '../assets/Style.css';
 import {Link} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -72,6 +73,7 @@ function Forgot() {
      <header className='head-rlf'>
     <img src={logo} alt="School Logo" className="header-logo" />
     <h1>School Management</h1>
+    <Link to="/home"><img src={holo} className='home-logo'/></Link> 
     </header>
     <div className='forgot-top-div'>
         <h1>Forgot Password</h1>
