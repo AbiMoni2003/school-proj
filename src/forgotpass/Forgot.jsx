@@ -83,7 +83,7 @@ function Forgot() {
             </div>
             <input type="text" placeholder="🔐 New Password" className='newpass' value={newpass} onChange={(e)=>setNewpass(e.target.value)}/>
             <button className='btn' onClick={resetpass}>Reset Password</button>
-            <p><Link to="/login">⬅ Back to Log in</Link></p>
+            <Link to="/login"><p>⬅ Back to Log in</p></Link>
     </div>
    </Fragment>
   )
