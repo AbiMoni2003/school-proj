@@ -53,7 +53,7 @@ h1 {
 }
 
 input {
-    width: 95%;
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: none;
@@ -118,7 +118,7 @@ button.btn:hover {
 
 @media (max-width: 750px) {
     .otp-container input {
-        width: 65%;
+        width: 60%;
     }
 
     .otp-container .btn {
@@ -142,10 +142,19 @@ button.btn:hover {
     }
 
     .otp-container .btn {
-        width: 30%;
+        width: 37%;
+        font-size: 12px;
+        padding: 9px;
     }
     header h1{
         font-size:20px ;
+    }
+    .top-div p{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .head-rlf h1{
+        font-size: 18px;
     }
 }
 
@@ -174,6 +183,9 @@ button.btn:hover {
     .forgot-top-div{
         max-width: 300px;
         margin-top: 70px;
+    }
+    .forgot-top-div p{
+        font-size: 13px;
     }
 }
 
@@ -213,6 +225,9 @@ margin-left: 8px;
 .login-top-div{
     max-width: 300px;
     margin-top: 70px;
+}
+.login-top-div p{
+    font-size: 13px;
 }
 }
 
@@ -267,16 +282,36 @@ margin-left: 8px;
 }
 
 @media screen and (max-width: 480px) {
+    
+    .whole-div{
+        position: relative;
+    }
     .whole-div nav {
         padding: 5px;
-        height: 60px;
-        
+        height: 60px;  
+        display: block; 
+        text-align: left;
+        }
+        .whole-div nav>ul{
+           display: block;
+           text-align: center;
+        }
+        .whole-div nav>ul>li{
+            margin: 10px;
+        }
+     .home-btn-div{
+        position: relative;
     }
     .whole-div button {
         padding: 8px;
-        font-size: 13px;   
+        font-size: 13px; 
+       
     }
     .whole-div .check-box{
         display: block;
+        top: 10px;
+        font-size: 25px;
+        right: 10px;
+        position: absolute;
     }
 }
