@@ -1,8 +1,23 @@
 import React, { Fragment,useState } from 'react'
 import logo from '../assets/CFlogo.png'
-import { Link } from 'react-router-dom'
+import image from '../assets/schoolimg.jpg'
+import { Link,useNavigate } from 'react-router-dom'
 
 function Home() {
+const [schoolName,setSchoolName]=useState("");
+const [error,setError]=useState("");
+const navigate=useNavigate();
+
+const schoolValidate=()=>{
+  if(!schoolName){
+    setError("Enter a valid Name");
+  }
+  else{
+    navigate("/register", { state: { schoolName } });
+  }
+
+}
+
 
   return (
     <Fragment>
@@ -21,13 +36,24 @@ function Home() {
               </Link>
             </div>
             <input type='checkbox' id='check'   />
-            <label htmlFor='check' className='check-box'>
+            <button htmlFor='check' className='check-box'>
               <i className='fas fa-bars'></i>
-            </label>
+            </button>
           </nav>
         </header>
         </div>
-        
+        <div className='body-div'>
+          <div className="home-body-div div1"><img src={image}/></div>
+          <div className="home-body-div div2">
+            <h6>Welcome to School Management</h6>
+            <div  className='school-input-div'>
+              <p> Enter School name</p>
+              <input type='text' className='school-input-box' value={schoolName} onChange={(e)=>setSchoolName(e.target.value)}/>
+              <p style={{color:"red"}}>{error}</p>
+            <button onClick={schoolValidate}>Submit</button>
+            </div>
+          </div>
+        </div>
     </Fragment>
   )
 }

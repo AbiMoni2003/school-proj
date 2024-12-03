@@ -27,7 +27,8 @@ body {
 }
 
 .header-logo {
-    height: 50px;  
+    height: 50px; 
+    margin-left: 50px; 
 }
 .home-logo{
     height: 35px;
@@ -274,6 +275,7 @@ margin-left: 8px;
     width: fit-content;
     margin: 10px;
     color: white;
+    margin-right: 50px;
     transition: background-color 1s ease-in-out,transform 2s;
 }
 
@@ -291,6 +293,49 @@ margin-left: 8px;
    display: none;
 }
 
+.body-div{
+    display: flex;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+.body-div img{
+    max-height: 100%;
+    width: 100%;
+}
+.home-body-div{
+    flex: 50%;
+    margin-left: 50px;
+}
+.div1{
+    align-content: center;
+}
+.div2{
+   margin-top: 50px;
+   
+}
+.school-input-div{
+    text-align: center;
+    align-content: center;
+    position: relative;
+}
+
+.school-input-box{
+    width: 55%;
+   align-items: center;
+   background-color: #f7f7f7;
+}
+.school-input-div p {
+    text-align: left; 
+    margin: 0 0 0px 22.5%; 
+    font-size: 14px; 
+}
+.school-input-div button{
+    width: 55%;
+    background-color: #3157f6;
+}
+
+
 @media (max-width: 700px) {
     .home-logo{
         height: 23px;
@@ -301,39 +346,32 @@ margin-left: 8px;
     .whole-div nav {
         padding: 5px;
         height: 60px;  
-        display: block; 
-        text-align: left;
+      
         }
-        .whole-div nav>ul{
-           display: block;
-           text-align: center;
-           transition: all 0.5s;
-          
-        }
-        .whole-div nav>ul>li{
-            margin: 10px;
-        }
-        .whole-div .home-btn-div{
-            align-items: center;
-            text-align: center;
-            margin-left: 40px;
-        }
-    
     .whole-div button {
         padding: 8px;
-        font-size: 13px;  
+        font-size: 13px;
+        margin-right: 10px;  
     }
-    .whole-div .check-box{
-        display: block;
-        top: 10px;
-        font-size: 25px;
-        right: 10px;
-        position: absolute;
-    }
-   .whole-div{
-    background-color: #186cd3;
-   }
-#check:checked  ~ .nav-items{
-    background-color: #0e7cea;
+.body-div{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.div1{
+    margin: 15px;
+    align-content:space-between ;
+}
+.div2{
+    margin-left: 20px;
+}
+
+.header-logo{
+    margin-left: 10px;
+}
+.school-input-div p{
+    margin: 0 0 5px 10%;
+}
+.school-input-box,.school-input-div button{
+    width: 80%;
 }
 }
