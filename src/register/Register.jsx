@@ -4,6 +4,7 @@ import logo from '../assets/CFlogo.png';
 import holo from '../assets/home.svg';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import regimg from '../assets/registerimg.png'
 
 
 function Register() {
@@ -93,7 +94,9 @@ function Register() {
                 <h1>{schoolName}</h1>
                 <Link to="/home"><img src={holo} className='home-logo' /></Link>
             </header>
-            <div className="top-div">
+           
+            
+            <div className="top-div ">
                 <h1>Register</h1>
 
                
@@ -161,6 +164,7 @@ function Register() {
 
                 <p>Have already an account?<Link to="/login"> Login here</Link></p>
             </div>
+            
         </Fragment>
     );
 }
