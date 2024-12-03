@@ -46,6 +46,8 @@ const schoolValidate=()=>{
           <div className="home-body-div div1"><img src={image}/></div>
           <div className="home-body-div div2">
             <h6>Welcome to School Management</h6>
+            <p className='home-para'> The School Management System is a secure, user-friendly platform for streamlining school operations. It customizes the school name, supports responsive design, and ensures data integrity with input validations. Scalable and efficient, it enhances navigation and offers future-ready features for a connected educational experience.</p>
+
             <div  className='school-input-div'>
               <p> Enter School name</p>
               <input type='text' className='school-input-box' value={schoolName} onChange={(e)=>setSchoolName(e.target.value)}/>

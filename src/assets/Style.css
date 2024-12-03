@@ -38,6 +38,7 @@ body {
     cursor: pointer;
 }
 
+
 .top-div {
     max-width: 400px;
     margin: 30px auto;
@@ -339,6 +340,10 @@ margin-left: 8px;
 .school-input-div button:hover{
     background-color: #0333f1;
 }
+.home-para{
+    font-size: 20px;
+   
+}
 
 
 @media (max-width: 700px) {
@@ -364,10 +369,13 @@ margin-left: 8px;
 }
 .div1{
     margin: 15px;
-    align-content:space-between ;
+    margin-top: 0px;
+    align-content:flex-start ;
 }
 .div2{
     margin-left: 20px;
+    margin-top: 30px;
+    
 }
 
 .header-logo{
@@ -381,5 +389,9 @@ margin-left: 8px;
 }
 .whole-div nav>ul{
     display: none;
+}
+.home-para{
+    font-size: 12px;
+    
 }
 }

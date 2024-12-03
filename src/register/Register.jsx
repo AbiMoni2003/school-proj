@@ -91,11 +91,11 @@ function Register() {
         <Fragment>
             <header className='head-rlf'>
                 <img src={logo} alt="School Logo" className="header-logo" />
-                <h1>{schoolName}</h1>
+                <h1 className='regi-head'>{schoolName}</h1>
                 <Link to="/home"><img src={holo} className='home-logo' /></Link>
             </header>
            
-            
+           
             <div className="top-div ">
                 <h1>Register</h1>
 
