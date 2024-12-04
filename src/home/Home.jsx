@@ -26,16 +26,15 @@ const schoolValidate=()=>{
           <nav>
         <a href='https://www.corpfield.com/' target='_blank'>   <img src={logo} alt='Company Logo' className='header-logo' /></a> 
             <ul >
-              <li className="nav-item">Home</li>
+              <li className="nav-item"><Link to="/home">Home</Link></li>
               <li className="nav-item">About</li>
-              <li className="nav-item">Contact</li>
+           <li className="nav-item"> <Link to="/contact">Contact</Link>  </li>
             </ul>
             <div className='home-btn-div'>
               <Link to="/login">
                 <button className="home-btn">Login</button>
               </Link>
-            </div>
-           
+            </div>  
           </nav>
         </header>
         </div>
@@ -63,12 +62,13 @@ const schoolValidate=()=>{
               <div className='slide'>
               <h1>Menu</h1>
               <ul>
-                <li>Home</li>
+              <li><Link to="/home">Home</Link></li>
                 <li>About</li>
-                <li>Contact</li>
+              <li><Link to="/contact">Contact</Link></li>  
               </ul>
               </div>
             </label>
+            
     </Fragment>
   )
 }

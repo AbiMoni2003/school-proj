@@ -4,7 +4,7 @@ import Forgot from './forgotpass/Forgot'
 import Login from './login/Login'
 import Register from './register/Register'
 import Home from './home/Home';
-
+import Contact from './contactus/Contact';
 function App() {
 
   return (
@@ -16,6 +16,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/forgot' element={<Forgot/>}/>
+        <Route path='/contact' element={<Contact/>}/>
       </Routes>
       </BrowserRouter> 
     </>

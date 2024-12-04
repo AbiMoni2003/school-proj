@@ -263,10 +263,14 @@ margin-left: 8px;
 }
 
 .whole-div nav>ul>li:hover{
-    text-decoration: underline;
    text-underline-offset: 10px;
    text-decoration-thickness: 3px;
    transform: scale(1.07);
+   
+}
+.whole-div nav>ul>li>a{
+    text-decoration: none;
+    color: #333;
 }
 
 
@@ -423,6 +427,10 @@ label{
       margin: 10px 0;
       text-transform: uppercase;
       color: #333;
+    }
+    .slide li>a{
+       text-decoration: none;
+       color: #333;
     }
   
     label input {
