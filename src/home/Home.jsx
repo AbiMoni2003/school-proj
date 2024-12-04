@@ -35,10 +35,7 @@ const schoolValidate=()=>{
                 <button className="home-btn">Login</button>
               </Link>
             </div>
-            <input type='checkbox' id='check'   />
-            <button htmlFor='check' className='check-box'>
-              <i className='fas fa-bars'></i>
-            </button>
+           
           </nav>
         </header>
         </div>
@@ -56,6 +53,22 @@ const schoolValidate=()=>{
             </div>
           </div>
         </div>
+        <label>
+              <input type='checkbox'/>
+            <div className="toggle" >
+                <span className="top-line common"></span>
+                <span className="mid-line common"></span>
+                <span className="bottom-line common"></span>
+                 </div>
+              <div className='slide'>
+              <h1>Menu</h1>
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+              </div>
+            </label>
     </Fragment>
   )
 }
