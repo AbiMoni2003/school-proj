@@ -37,8 +37,52 @@ function Contact() {
                 </ul>
               </div>
             </label>
-            
-   </Fragment>
+            <div className="container">
+                <div className="contactinfo">
+                    <div className="box">
+                        <div className="icon"> <i class="fa-solid fa-location-dot"></i></div>
+                        <div className="text">
+                            <h3>Address</h3>
+                            <p>#520A/1, Kesava Thirupapuram,<br/>
+                                MS Road Vettunimadam,<br/>
+                                Nagercoil - 629003</p>
+                        </div>
+                    </div>
+                    <div className="box">
+                        <div className="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div className="text">
+                            <h3>Email</h3>
+                            <p>info@corpfield.com</p>
+                        </div>
+                    </div>
+                    <div className="box">
+                        <div className="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div className="text">
+                            <h3>Phone</h3>
+                            <p>+91-9003031143</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="contactform">
+                    <form>
+                        <h2> Send Message</h2>
+                        <div className="inputbox">
+                            <input type="text"  placeholder='Write your name '/>
+                           
+                        </div>
+                        <div className="inputbox">
+                            <input type="text" placeholder='Write your email'/>
+                           
+                            </div>
+                            <div className="inputbox">
+                               <input type="text" placeholder='Write Your message' className='text-area' />
+                                
+                                </div>
+                                <button>Submit</button>
+                    </form>
+                </div>
+            </div>
+               </Fragment>
   )
 }
 
