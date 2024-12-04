@@ -337,11 +337,17 @@ margin-left: 8px;
     font-size: 20px;
    
 }
+label{
+    display: none;
+}
 
 
 @media (max-width: 700px) {
     .home-logo{
         height: 23px;
+    }
+    label{
+        display: block;
     }
     .whole-div{
         position: relative;
