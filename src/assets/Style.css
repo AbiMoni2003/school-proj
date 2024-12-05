@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; 
-   background-color: #f9f5f5;
+   background-color: #ffffff;
     padding: 10px ;
     box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
     
@@ -47,7 +47,7 @@ body {
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-    
+    margin-top: 10%;
 }
 .top-div a{
     text-decoration: none;
@@ -182,6 +182,7 @@ button.btn:hover {
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 10%;
 }
 .forgot-otp{
     margin-top:5px;
@@ -217,6 +218,7 @@ button.btn:hover {
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 10%;
 }
 
 
@@ -255,7 +257,7 @@ margin-left: 8px;
 
 .whole-div nav{
     display: flex;
-    background-color: #f5ecec;
+    background-color: #fffdfd;
     padding: 10px;
     text-align: center;
     align-items: center;
@@ -271,6 +273,7 @@ margin-left: 8px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-size: 17px;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .whole-div nav>ul>li:hover{
@@ -308,6 +311,7 @@ margin-left: 8px;
     background-color: white;
     height: 100vh;
     width: 100%;
+    margin-top: -40px;
 }
 .body-div img{
     max-height: 100%;
@@ -321,8 +325,11 @@ margin-left: 8px;
     align-content: center;
 }
 .div2{
-   margin-top: 50px;
-   
+align-content: center;   
+}
+.div2 h6{
+    font-size: 35px;
+    font-weight: 600;
 }
 .school-input-div{
     text-align: center;
@@ -338,7 +345,7 @@ margin-left: 8px;
 .school-input-div p {
     text-align: left; 
     margin: 0 0 5px 22.5%; 
-    font-size: 14px; 
+    font-size: 18px; 
 }
 .school-input-div button{
     width: 55%;
@@ -355,6 +362,7 @@ margin-left: 8px;
 label{
     display: none;
 }
+
 .container{
     display: flex;
     width: 100%;
@@ -400,7 +408,7 @@ label{
 .contactform{
     width: 35%;
     padding: 40px;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     border-radius: 15px;
 }
 .contactform h2{
@@ -458,23 +466,30 @@ label{
 .body-div{
     display: flex;
     flex-wrap: wrap-reverse;
+    margin-top: 0px;
 }
 .div1{
     margin: 15px;
-    margin-top: 0px;
-    align-content:flex-start ;
+    margin-top: -100px;
+    align-content:first baseline ;
 }
 .div2{
     margin-left: 20px;
-    margin-top: 30px;
+   align-content:flex-start;
+   margin-top: 20px;
     
 }
+.div2 h6{
+    font-size: 20px;
+}
+
 
 .header-logo{
     margin-left: 10px;
 }
 .school-input-div p{
     margin: 0 0 5px 10%;
+    font-size: 15px;
 }
 .school-input-box,.school-input-div button{
     width: 80%;

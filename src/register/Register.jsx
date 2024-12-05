@@ -94,7 +94,7 @@ function Register() {
             <h1 className='regi-head'>{schoolName}</h1>
                 <Link to="/home"><img src={holo} className='home-logo' /></Link>
             </header>
-           
+           <div className="register-whole-div">
            
             <div className="top-div ">
                 <h1>Register</h1>
@@ -164,7 +164,7 @@ function Register() {
 
                 <p>Have already an account?<Link to="/login"> Login here</Link></p>
             </div>
-            
+            </div>
         </Fragment>
     );
 }
