@@ -90,8 +90,8 @@ function Register() {
     return (
         <Fragment>
             <header className='head-rlf'>
-                <img src={logo} alt="School Logo" className="header-logo" />
-                <h1 className='regi-head'>{schoolName}</h1>
+            <a href='https://www.corpfield.com/' target='_blank'>   <img src={logo} alt='Company Logo' className='header-logo' /></a> 
+            <h1 className='regi-head'>{schoolName}</h1>
                 <Link to="/home"><img src={holo} className='home-logo' /></Link>
             </header>
            

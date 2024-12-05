@@ -617,5 +617,62 @@ label{
       .contactform h2{
         font-size: 24px;
       }
+
   
+}
+
+.whole-footer-div{
+background-color: #333;
+color: white;
+}
+.footer-div{
+    display: flex;
+    padding: 20px;
+    align-content: center;
+}
+.footer-div .footer-content{
+    flex: 30%;
+    text-align: left;
+    margin-left: 50px;
+}
+.footer-div .footer-content h3{
+    font-weight: 600;
+    font-size: 25px;
+}
+hr{
+    border: 2px solid white;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+}
+.footer-icon p{
+    font-size: 25px;
+    margin-left: 10px;
+    
+}
+.footer-icon p a{
+    color: white;
+}
+@media (max-width:480px){
+    .footer-div{
+        display: flex;
+        flex-direction: column;
+      }
+      .footer-div .footer-content{
+        margin-left: 20px;
+      }
+    .footer-div .footer-content h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .footer-div .footer-content p{
+        font-size: 15px;
+    }
+    .footer-div .footer-content h4{
+        font-size: 19px;
+    }
+    .footer-icon p{
+        font-size: 20px;
+    }
 }

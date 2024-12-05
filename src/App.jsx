@@ -5,6 +5,7 @@ import Login from './login/Login'
 import Register from './register/Register'
 import Home from './home/Home';
 import Contact from './contactus/Contact';
+import Footer from './footer/Footer';
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
       </BrowserRouter> 
+      
     </>
   )
 }

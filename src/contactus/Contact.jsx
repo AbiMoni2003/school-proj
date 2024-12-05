@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import logo from '../assets/CFlogo.png'
 import { Link } from 'react-router-dom'
+import Footer from '../footer/Footer'
 function Contact() {
   return (
    <Fragment>
@@ -40,7 +41,7 @@ function Contact() {
             <div className="container">
                 <div className="contactinfo">
                     <div className="box">
-                        <div className="icon"> <i class="fa-solid fa-location-dot"></i></div>
+                        <div className="icon"> <i className="fa-solid fa-location-dot"></i></div>
                         <div className="text">
                             <h3>Address</h3>
                             <p>#520A/1, Kesava Thirupapuram,<br/>
@@ -49,14 +50,14 @@ function Contact() {
                         </div>
                     </div>
                     <div className="box">
-                        <div className="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div className="icon"><i className="fa-solid fa-envelope"></i></div>
                         <div className="text">
                             <h3>Email</h3>
                             <p>info@corpfield.com</p>
                         </div>
                     </div>
                     <div className="box">
-                        <div className="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div className="icon"><i className="fa-solid fa-phone"></i></div>
                         <div className="text">
                             <h3>Phone</h3>
                             <p>+91-9003031143</p>
@@ -82,6 +83,7 @@ function Contact() {
                     </form>
                 </div>
             </div>
+            <Footer/>
                </Fragment>
   )
 }

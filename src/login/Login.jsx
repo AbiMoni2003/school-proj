@@ -23,8 +23,8 @@ function Login() {
   return (
     <Fragment>
        <header className='head-rlf'>
-        <img src={logo} alt='logo' className='header-logo'/>
-        <h1>School Management</h1>
+       <a href='https://www.corpfield.com/' target='_blank'>   <img src={logo} alt='Company Logo' className='header-logo' /></a> 
+       <h1>School Management</h1>
         <Link to="/home"><img src={holo} className='home-logo'/></Link> 
        </header>
        <div className='login-top-div'>

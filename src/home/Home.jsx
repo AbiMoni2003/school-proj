@@ -2,6 +2,7 @@ import React, { Fragment,useState } from 'react'
 import logo from '../assets/CFlogo.png'
 import image from '../assets/schoolimg.jpg'
 import { Link,useNavigate } from 'react-router-dom'
+import Footer from '../footer/Footer';
 
 function Home() {
 const [schoolName,setSchoolName]=useState("");
@@ -68,7 +69,7 @@ const schoolValidate=()=>{
               </ul>
               </div>
             </label>
-            
+            <Footer/>
     </Fragment>
   )
 }
