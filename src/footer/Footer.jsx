@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import '../assets/style.css';
 
 function Footer() {
   return (
