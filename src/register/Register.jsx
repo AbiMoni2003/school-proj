@@ -4,7 +4,7 @@ import logo from '../assets/CFlogo.png';
 import holo from '../assets/home.svg';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import regisimg from '../assets/registerimg.png';
+import sli1 from '../assets/hand.svg';
 
 function Register() {
     const location=useLocation();
@@ -94,8 +94,10 @@ function Register() {
                 <Link to="/home"><img src={holo} className='home-logo' /></Link>
             </header>
            <div className="register-whole-div">
-          
-            <div className="top-div ">
+          <div className="top-div top-div1">
+            <img src={sli1}/>
+          </div>
+            <div className="top-div top-div2">
                 <h1>Register</h1>
 
                

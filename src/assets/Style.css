@@ -40,9 +40,18 @@ body {
 }
 .register-whole-div{
     display: flex;
+    flex-direction: row;
+}
+.top-div{
+    flex: 50%;
+}
+.top-div1 img{
+    margin-top: -30px;
+    height: 800px;
+    width: auto;
 }
 
-.top-div {
+.top-div2 {
     max-width: 400px;
     margin: 30px auto;
     padding: 20px;
@@ -50,7 +59,9 @@ body {
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-    margin-top: 10%;
+    height: fit-content;
+    margin-right: 10%;
+    margin-top: 17%;
 }
 .top-div a{
     text-decoration: none;
@@ -61,6 +72,8 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #333;
+    font-size: 27px;
+    font-weight: 600;
 }
 
 .input-container,
@@ -150,8 +163,24 @@ button.btn:hover {
 }
 
 @media (max-width: 480px) {
-    .top-div {
-        width: 320px;
+    .register-whole-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        padding: 10px; 
+    }
+    .top-div1 img{
+        height: 300px; 
+        margin-left: 0; 
+        margin-top: -90px;
+        width: 100%; 
+        object-fit: cover; 
+    }
+    .top-div2 {
+        max-width: 90%; 
+        margin: 10px 0; 
+        text-align: center; 
     }
 
     .otp-container input {
@@ -180,7 +209,19 @@ button.btn:hover {
 }
 
 
-.forgot-top-div{
+
+.forgot-whole-div{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.forgot-top-div1 img{
+    height: auto;
+    width: 800px;
+    margin-top: -20px;
+}
+
+.forgot-top-div2{
     max-width: 400px;
     margin: 60px auto;
     padding: 20px;
@@ -188,7 +229,12 @@ button.btn:hover {
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-    margin-top: 10%;
+    margin-top: 17%;
+    height: fit-content;
+}
+.forgot-top-div2 h1{
+    font-size: 25px;
+    font-weight: 600;
 }
 .forgot-otp{
     margin-top:5px;
@@ -205,18 +251,50 @@ button.btn:hover {
     text-decoration: none;
     color: #565656;
 }
-@media (max-width:450px){
-    .forgot-top-div{
-        max-width: 320px;
-        margin-top: 70px;
+@media (max-width:480px){
+    .forgot-whole-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        padding: 10px; 
+    }
+
+    .forgot-top-div1 img {
+        height: 300px; 
+        margin-left: 0; 
+        margin-top: -20px; 
+        width: 100%; 
+        object-fit: cover; 
+    }
+
+    .forgot-top-div2 {
+        max-width: 90%; 
+        margin: 10px 0; 
+        text-align: center; 
+    }
+    .forgot-top-div2 h1{
+        font-size: 17px;
     }
     .forgot-top-div p{
         font-size: 13px;
     }
+   
 }
 
 
-.login-top-div{
+.login-whole-div{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+.login-top-div1 img{
+    height: auto;
+    width: 800px;
+    margin-top: -20px;
+}
+.login-top-div2{
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
@@ -224,7 +302,7 @@ button.btn:hover {
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 
@@ -251,10 +329,29 @@ margin-left: 8px;
     text-decoration: none;
     color: #565656;
 }
-@media (max-width:450px){
-.login-top-div{
-    max-width: 320px;
-    margin-top: 70px;
+@media (max-width:480px){
+    .login-whole-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        padding: 10px; 
+        
+    }
+    .login-top-div1 img{
+        height: 300px; 
+        margin-left: 0; 
+        margin-top: -20px; 
+        width: 100%; 
+        object-fit: cover; 
+    }
+.login-top-div2{
+         max-width: 90%; 
+        margin: 10px 0; 
+        text-align: center; 
+}
+.login-top-div2 h1{
+    font-size: 18px;
 }
 .login-top-div p{
     font-size: 13px;
@@ -309,9 +406,17 @@ margin-left: 8px;
     background-color: #0e7cea;
     transform: scale(1.06);
 }
-
-
-
+#carouselExampleCaptions{
+  
+    height: auto;
+    width: 800px;
+    margin: 50px auto;
+   filter: grayscale(90%);
+  
+}
+#carouselExampleCaptions:hover{
+    filter: grayscale(0%);
+}
 .body-div{
     display: flex;
     background-color: white;
@@ -414,7 +519,7 @@ label{
 .contactform{
     width: 35%;
     padding: 40px;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
     border-radius: 15px;
 }
 .contactform h2{
@@ -422,6 +527,7 @@ label{
     color: #333;
     font-weight: 800;
     text-align: center;
+   
 }
 .contactform .inputbox{
     position: relative;
@@ -432,6 +538,7 @@ label{
     width: 100%;
     outline: none;
     margin: 10px;
+    background-color: white;
 }
 .contactform button{
     background-color: #0333f1;
@@ -707,7 +814,7 @@ hr{
     margin-left: 50px;
     margin-right: 50px;
     width: auto;
-    height: 300px;
+    height: 400px;
     border-radius: 20px;
     background: #ffffff;
     box-shadow: 15px 15px 30px rgb(224, 216, 216),
@@ -715,7 +822,6 @@ hr{
     padding: 70px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     align-items: center;
-    justify-content: space-between;
     border: 0;
 }
 
@@ -725,7 +831,7 @@ hr{
 }
 
 .heading {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -734,9 +840,9 @@ hr{
     text-align: justify;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
-  
+  font-size: 18px;
 }
 .para p
 

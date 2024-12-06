@@ -4,6 +4,8 @@ import holo from '../assets/home.svg';
 import '../assets/Style.css';
 import {Link} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import sli1 from '../assets/hand.svg';
+
 
 
 function Forgot() {
@@ -75,7 +77,11 @@ function Forgot() {
      <h1>School Management</h1>
     <Link to="/home"><img src={holo} className='home-logo'/></Link> 
     </header>
-    <div className='forgot-top-div'>
+    <div className="forgot-whole-div">
+    <div className='forgot-top-div forgot-top-div1'>
+        <img src={sli1}/>
+    </div>
+    <div className='forgot-top-div forgot-top-div2'>
         <h1>Forgot Password</h1>
         <input type="text"  placeholder="📞 Phone Number" maxLength={10} value={number} onChange={(e)=>setNumber(e.target.value)}/>
         <button className='btn' onClick={getotp}>Get OTP</button>
@@ -86,6 +92,7 @@ function Forgot() {
             <input type="text" placeholder="🔐 New Password" className='newpass' value={newpass} onChange={(e)=>setNewpass(e.target.value)}/>
             <button className='btn' onClick={resetpass}>Reset Password</button>
             <Link to="/login"><p>⬅ Back to Log in</p></Link>
+    </div>
     </div>
    </Fragment>
   )
