@@ -6,6 +6,7 @@ import Register from './register/Register'
 import Home from './home/Home';
 import Contact from './contactus/Contact';
 import Footer from './footer/Footer';
+import About from './about/About';
 function App() {
 
   return (
@@ -18,8 +19,10 @@ function App() {
         <Route path='/register' element={<Register/>}/>
         <Route path='/forgot' element={<Forgot/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/about' element={<About/>}/>
       </Routes>
       </BrowserRouter> 
+      
       
     </>
   )

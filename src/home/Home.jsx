@@ -28,7 +28,7 @@ const schoolValidate=()=>{
         <a href='https://www.corpfield.com/' target='_blank'>   <img src={logo} alt='Company Logo' className='header-logo' /></a> 
             <ul >
               <li className="nav-item"><Link to="/home">Home</Link></li>
-              <li className="nav-item">About</li>
+              <li className="nav-item"><Link to="/about">About</Link></li>
            <li className="nav-item"> <Link to="/contact">Contact</Link>  </li>
             </ul>
             <div className='home-btn-div'>
@@ -39,6 +39,44 @@ const schoolValidate=()=>{
           </nav>
         </header>
         </div>
+        <div id="carouselExampleCaptions" className="carousel slide">
+  <div className="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img src={image} className="d-block w-100" alt="..."/>
+      <div className="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div className="carousel-item">
+      <img src={image} className="d-block w-100" alt="..."/>
+      <div className="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div className="carousel-item">
+      <img src={image} className="d-block w-100" alt="..."/>
+      <div className="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
         <div className='body-div'>
           <div className="home-body-div div1"><img src={image}/></div>
           <div className="home-body-div div2">
@@ -64,7 +102,7 @@ const schoolValidate=()=>{
               <h1>Menu</h1>
               <ul>
               <li><Link to="/home">Home</Link></li>
-                <li>About</li>
+              <li><Link to="/about">About</Link></li>
               <li><Link to="/contact">Contact</Link></li>  
               </ul>
               </div>

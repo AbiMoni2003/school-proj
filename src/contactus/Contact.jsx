@@ -11,7 +11,7 @@ function Contact() {
         <a href='https://www.corpfield.com/' target='_blank'>   <img src={logo} alt='Company Logo' className='header-logo' /></a> 
             <ul >
          <li className="nav-item"><Link to="/home">Home</Link></li>
-              <li className="nav-item">About</li>
+              <li className="nav-item"><Link to="/about">About</Link></li>
               <li className="nav-item"><Link to="/contact">Contact</Link></li>
             </ul>
             <div className='home-btn-div'>
@@ -33,7 +33,7 @@ function Contact() {
               <h1>Menu</h1>
               <ul>
               <li><Link to="/home">Home</Link></li>
-                <li>About</li>
+                <li><Link to="/about">About</Link></li>
                 <li><Link to="/contact">Contact</Link></li>  
                 </ul>
               </div>
