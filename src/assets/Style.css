@@ -9,6 +9,35 @@ body {
     background-color: #ffffff;
 }
 
+.input-wrapper {
+    position: relative;
+    width: 100%; 
+  }
+
+  .input-wrapper input {
+    width: 100%;
+    padding-left: 35px;  
+    border: none;
+  }
+
+  .input-wrapper i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+    pointer-events: none; 
+  }
+  .input-wrapper .newpass-icon{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-80%);
+    color: #888;
+    font-size: 16px;
+    pointer-events: none; 
+  }
 .head-rlf {
     display: flex;
     align-items: center;
@@ -46,9 +75,9 @@ body {
     flex: 50%;
 }
 .top-div1 img{
-    margin-top: -30px;
-    height: 800px;
-    width: auto;
+    margin-top: -20px;
+    height: 700px;
+    width: 800px;
 }
 
 .top-div2 {
@@ -61,7 +90,7 @@ body {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     height: fit-content;
     margin-right: 10%;
-    margin-top: 17%;
+    margin-top: 14%;
 }
 .top-div a{
     text-decoration: none;
@@ -103,15 +132,20 @@ input:focus {
     outline: none;
     background: transparent;
 }
+.otp-container{
+    display: flex;
+}
 
 .otp-container input {
-    width: 66%;
+    width: 100%;
     display: inline-block;
 }
 
 .otp-container .btn {
-    padding-top: 11px;
-    width: 26%;
+   height: fit-content;
+   padding: 10px;
+    width: 46%;
+    margin-top: 11px;
     display: inline-block;
     margin-left: 3%;
     font-size: 13px;
@@ -178,19 +212,18 @@ button.btn:hover {
         object-fit: cover; 
     }
     .top-div2 {
-        max-width: 90%; 
+        width: 90%; 
         margin: 10px 0; 
-        text-align: center; 
     }
 
     .otp-container input {
-        width: 60%;
+        width: 100%;
     }
 
     .otp-container .btn {
-        width: 37%;
+        width: 40%;
         font-size: 12px;
-        padding: 9px;
+        padding: 10px;
     }
     header h1{
         font-size:20px ;
@@ -207,8 +240,18 @@ button.btn:hover {
     }
    
 }
-
-
+@media (max-width:1024px){
+    .register-whole-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+      
+    }
+   
+ 
+ 
+}
 
 .forgot-whole-div{
     display: flex;
@@ -216,20 +259,21 @@ button.btn:hover {
     align-content: center;
 }
 .forgot-top-div1 img{
-    height: auto;
+    height: 700px;
     width: 800px;
     margin-top: -20px;
 }
 
+
 .forgot-top-div2{
-    max-width: 400px;
+    width: 400px;
     margin: 60px auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-    margin-top: 17%;
+    margin-top: 13%;
     height: fit-content;
 }
 .forgot-top-div2 h1{
@@ -290,19 +334,19 @@ button.btn:hover {
     align-items: center;
 }
 .login-top-div1 img{
-    height: auto;
+    height: 700px;
     width: 800px;
     margin-top: -20px;
 }
 .login-top-div2{
-    max-width: 400px;
+    width: 400px;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-    margin-top: 15%;
+    margin-top: 12%;
 }
 
 

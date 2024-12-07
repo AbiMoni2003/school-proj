@@ -78,18 +78,25 @@ function Forgot() {
     <Link to="/home"><img src={holo} className='home-logo'/></Link> 
     </header>
     <div className="forgot-whole-div">
+   
     <div className='forgot-top-div forgot-top-div1'>
         <img src={sli1}/>
     </div>
     <div className='forgot-top-div forgot-top-div2'>
         <h1>Forgot Password</h1>
-        <input type="text"  placeholder="📞 Phone Number" maxLength={10} value={number} onChange={(e)=>setNumber(e.target.value)}/>
+        <div class="input-wrapper">
+                        <i class="fas fa-phone"></i>
+        <input type="text"  placeholder="Phone Number" maxLength={10} value={number} onChange={(e)=>setNumber(e.target.value)}/></div>
         <button className='btn' onClick={getotp}>Get OTP</button>
         <div className="otp-container forgot-otp">
-                <input type="text" maxLength={4} placeholder=" 🔗 Enter OTP" className="otp-input" value={otp} onChange={(e)=>setOtp(e.target.value)} />
+        <div class="input-wrapper">
+        <i class="fas fa-link"></i>
+                <input type="text" maxLength={4} placeholder="Enter OTP" className="otp-input" value={otp} onChange={(e)=>setOtp(e.target.value)} /></div>
                 <button className="btn small-btn" onClick={verifyotp}>Verify OTP</button>
             </div>
-            <input type="text" placeholder="🔐 New Password" className='newpass' value={newpass} onChange={(e)=>setNewpass(e.target.value)}/>
+            <div class="input-wrapper">
+                        <i class="fas fa-lock newpass-icon"></i>
+            <input type="text" placeholder="New Password" className='newpass' value={newpass} onChange={(e)=>setNewpass(e.target.value)}/></div>
             <button className='btn' onClick={resetpass}>Reset Password</button>
             <Link to="/login"><p>⬅ Back to Log in</p></Link>
     </div>

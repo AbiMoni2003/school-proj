@@ -35,8 +35,12 @@ function Login() {
        </div>
        <div className='login-top-div login-top-div2'>
         <h1>Login</h1>
-        <input type="text"  placeholder='👤 Username'  value={username} onChange={(e)=>setUsername(e.target.value)}/>
-        <input type="password" placeholder='🔐 Password' value={password} onChange={(e)=>setPassword(e.target.value)} />
+        <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
+        <input type="text"  placeholder='Username'  value={username} onChange={(e)=>setUsername(e.target.value)}/></div>
+        <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+        <input type="password" placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)} /></div>
         <p className='login-forgot'><Link to="/forgot">Forgot Password?</Link></p>
         <button className='login-btn' onClick={loginvalidate}>Login</button>
         <p className='login-dont'>Don't have an account?<Link to="/register"> Sign up</Link></p>

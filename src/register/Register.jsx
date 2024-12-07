@@ -103,28 +103,37 @@ function Register() {
                
                 {step === 1 && (
                     <div className="input-container">
+                        <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
                         <input
                             type="text"
                             name="username"
                             className="name"
-                            placeholder="👤 Username"
+                            placeholder="Username"
                             value={usrname}
                             onChange={(e) => setUsrname(e.target.value)}
                         />
+                        </div>
+                        <div class="input-wrapper">
+                        <i class="fas fa-phone"></i>
                         <input
                             type="text"
                             name="phonenumber"
-                            className="number"
-                            placeholder="📞 Phone Number"
+                            className="number "
+                            placeholder="Phone Number"
                             maxLength={10}
                             value={number}
                             onChange={(e) => setNumber(e.target.value)}
                         />
+                        </div>
+                        <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
                        <input type="email" 
-                       placeholder='📧 Email'
+                       placeholder='Email'
                        value={mail}
                        onChange={(e)=>setMail(e.target.value)}
                        />
+                       </div>
                         <button onClick={getotp} className="btn">Get OTP</button>
                     </div>
                 )}
@@ -132,31 +141,39 @@ function Register() {
               {step === 2 && (
                 <div>
                     <div className="otp-container">
+                    <div class="input-wrapper">
+                    <i class="fas fa-link"></i>
                         <input
                             type="text"
                             value={otp}
                             onChange={(e) => setOtp(e.target.value)}
                             maxLength={4}
-                            placeholder=" 🔗 Enter OTP"
+                            placeholder="Enter OTP"
                             className="otp-input"
-                        />
+                        /></div>
                         <button onClick={verifyotp} className="btn small-btn">Verify OTP</button>
                     </div>
                     <div className="password-container">
+                    <div class="input-wrapper">
+                    <i class="fas fa-lock"></i>
                         <input
                             type="password"
                             className="password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            placeholder=" 🔐 Password"
+                            placeholder="Password"
                         />
+                        </div>
+                        <div class="input-wrapper">
+                        <i class="fas fa-key"></i>
                         <input
                             type="password"
                             className="cnfmpassword"
                             value={conpassword}
                             onChange={(e) => setConpassword(e.target.value)}
-                            placeholder=" 🗝️ Confirm Password"
+                            placeholder="Confirm Password"
                         />
+                        </div>
                         <p className="error-msg">{msg}</p>
                         <button onClick={handleRegister} className="btn register-btn">Register</button>
                     </div>
